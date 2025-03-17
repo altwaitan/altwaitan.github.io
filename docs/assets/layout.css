@@ -7,6 +7,10 @@
 	--green: #24d05a;
 	--blue: #10a2f5;
 	--yellow: #e9bc3f;
+	--h1-size: 1.6rem;
+	--h2-size: 1.1rem;
+	--h3-size: 0.9rem;
+	--h4-size: 0.75rem;
 }
 
 html,
@@ -44,7 +48,7 @@ button {
 	border-radius: 15px;
 	box-sizing: border-box;
 	color: var(--gray);
-	font-size: 1rem;
+	font-size: var(--h3-size);
 	overflow: auto;
 	transition: 0.4s ease all;
 }
@@ -66,6 +70,7 @@ button:hover {
 
 .header-section {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
@@ -73,6 +78,8 @@ button:hover {
 
 .header-frame {
 	max-width: 350px;
+	text-align: center;
+	margin-top: 20px;
 }
 
 .go-home {
@@ -132,15 +139,27 @@ button:hover {
 }
 
 h1 {
-	font-weight: 400;
-	margin: 0;
-    font-size: 1.8rem;
+    font-weight: 400;
+    margin: 0 0 10px 0;
+    font-size: var(--h1-size);
 }
 
 h2 {
-	color: var(--gray);
-	font-weight: 300;
-	margin: 0 0 0.5em 0;
+    font-weight: 300;
+    margin: 0 0 0.5em 0;
+	font-size: var(--h2-size);
+}
+
+h3 {
+    font-weight: 400;
+    margin: 0.5em 0;
+	font-size: var(--h3-size);
+}
+
+h4 {
+    font-weight: 400;
+    margin: 0.5em 0;
+	font-size: var(--h4-size);
 }
 
 a {
@@ -181,8 +200,8 @@ br {
 
 .img-frame {
 	position: relative;
-	width: 300px;
-	height: 300px;
+	width: 200px;
+	height: 200px;
 	margin: 0 0 10px 0;
 	border-radius: 50%;
 	overflow: hidden;
@@ -197,7 +216,9 @@ br {
 }
 
 .links {
-	margin: 25px 0;
+	margin: 5px 0;
+	text-align: center;
+	font-size: var(--h3-size);
 }
 .links a:not(:last-child) {
 	padding: 0 12px 0 0;
@@ -240,6 +261,7 @@ br {
 
 .toggler {
 	margin: 25px 0;
+	text-align: center;
 }
 .toggler .show {
 	border-color: var(--black);
@@ -260,6 +282,24 @@ br {
 }
 .bio.show {
 	display: block;
+}
+
+.bio.short {
+	max-width: 90%; 
+	margin: 0 auto;
+	text-align: justify;
+	text-justify: inter-word;
+}
+.bio.news {
+	max-width: 90%;  
+	margin: 0 auto;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+.bio.projects {
+	max-width: 90%;  
+	margin: 0 auto;
 }
 
 .bio.news ul {
@@ -288,7 +328,6 @@ br {
     font-weight: bold;
 }
 
-
 .bio.projects {
     padding: 10px 0;
 }
@@ -297,22 +336,39 @@ br {
     display: flex;
     align-items: start; 
     margin-bottom: 20px; 
-    font-size: 0.8em;  /* Adjust this value to make the text larger or smaller */
+    padding: 1.0rem;
+    border-radius: 15px;
+    background: #FCFCFC;
+	border: 1px solid var(--gray);
+}
+
+.project-img {
+    margin-right: 20px;
 }
 
 .project-img img {
     width: 200px;
     height: 200px;
-    margin-right: 20px;
 }
 
 .project-details h3 {
     margin-top: 0; 
-    font-size: 1.2em; /* Adjust the size for the title, if desired */
 }
 
 .project-details p {
-    margin: 5px 0; 
+    margin: 1px 0;
+}
+
+@media (max-width: 600px) {
+    .project {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1.5rem;
+    }
+
+    .project-img {
+        flex: 0 0 auto;
+    }
 }
 
 
