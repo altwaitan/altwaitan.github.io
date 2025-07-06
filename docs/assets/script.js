@@ -1,78 +1,36 @@
-let colors = ["#000", "#000", "#000", "#000"];
+document.getElementById('show-more-news').onclick = function() {
+    var extras = document.querySelectorAll('.news-extra');
+    for (var i = 0; i < extras.length; i++) {
+        extras[i].style.display = 'list-item';
+    }
+    this.style.display = 'none';
+    document.getElementById('show-less-news').style.display = 'inline-block';
+};
+document.getElementById('show-less-news').onclick = function() {
+    var extras = document.querySelectorAll('.news-extra');
+    for (var i = 0; i < extras.length; i++) {
+        extras[i].style.display = 'none';
+    }
+    this.style.display = 'none';
+    document.getElementById('show-more-news').style.display = 'inline-block';
+    window.scrollTo({
+        top: document.querySelector('.news-section').offsetTop,
+        behavior: 'smooth'
+    });
+};
 
-(function () {
-	// setModeEventListener();
-	// setRandomLinkColor();
-	// setColorHoverListener();
-	setBioEventListener();
-	setRandomPhoto();
-
-	// setInterval(() => {
-	// 	setRandomPhoto();
-	// }, 2500);
-
-	// setInterval(() => {
-	// 	setRandomLinkColor();
-	// }, 5000);
-})();
-
-/* Dark Mode */
-
-function setModeEventListener() {
-	let list = document.body.classList;
-	document.getElementById("toggler").addEventListener("change", (event) => {
-		event.target.checked ? list.add("dark-mode") : list.remove("dark-mode");
-	});
-}
-
-/* Colors */
-
-function getRandomColor() {
-	return colors[Math.floor(Math.random() * colors.length)];
-}
-
-function setRandomLinkColor() {
-	Array.from(document.getElementsByTagName("a")).forEach((e) => {
-		e.style.color = getRandomColor();
-	});
-}
-
-function setColorHoverListener() {
-	Array.from(document.querySelectorAll("a, button")).forEach((e) => {
-		e.addEventListener("mouseover", setRandomLinkColor);
-	});
-}
-
-/* Photos */
-
-function setRandomPhoto() {
-	let num = Math.floor(Math.random() * 14) + 1;
-	document.getElementById("propic").src = `assets/face.png`;
-}
-
-/* Bio Toggles */
-
-function setBioEventListener() {
-	Array.from(document.getElementsByTagName("button")).forEach((e) => {
-		e.addEventListener("click", bioToggle);
-	});
-}
-
-function bioToggle(e) {
-	let bioType = e.target;
-	let color = getRandomColor();
-	off();
-	bioType.style.cssText = `border-color: ${color}; color: ${color}; font-weight: bold;`;
-	let bioTypeElement = document.getElementsByClassName(bioType.id)[0];
-	if (bioTypeElement !== undefined) bioTypeElement.classList.add("show");
-}
-
-function off() {
-	Array.from(document.getElementsByTagName("button")).forEach((butt) => {
-		butt.style.borderColor = "#96979c";
-		butt.style.color = "#96979c";
-	});
-	Array.from(document.getElementsByClassName("bio")).forEach((e) => {
-		e.classList.remove("show");
-	});
-}
+// Handle footer logo fallback
+document.addEventListener('DOMContentLoaded', function() {
+    var footerLogo = document.querySelector('.footer-logo');
+    var fallbackText = document.querySelector('.footer-fallback-text');
+    
+    footerLogo.onerror = function() {
+        this.style.display = 'none';
+        fallbackText.style.display = 'inline-block';
+    };
+    
+    footerLogo.onload = function() {
+        this.style.display = 'block';
+        fallbackText.style.display = 'none';
+    };
+});
