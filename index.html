@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal academic website." />
+  <title>Abdullah Altawaitan</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="topbar" id="topbar" data-scrolled="false">
+    <nav class="topbar__inner" aria-label="Primary">
+      <ul class="nav-menu" id="navMenu">
+        <li>
+          <a class="nav-link" href="#updates">
+            <svg class="nav-link__icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <circle cx="12" cy="12" r="9" />
+              <path d="M12 7v5l3 2" />
+            </svg>
+            <span>Updates</span>
+          </a>
+        </li>
+        <li>
+          <a class="nav-link" href="#research">
+            <svg class="nav-link__icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <path d="M9 3h6" />
+              <path d="M10 3v6L5.2 17.2A2 2 0 0 0 6.9 20.5h10.2a2 2 0 0 0 1.7-3.3L14 9V3" />
+              <path d="M7.5 14h9" />
+            </svg>
+            <span>Research</span>
+          </a>
+        </li>
+        <li>
+          <a class="nav-link" href="#teaching">
+            <svg class="nav-link__icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+            </svg>
+            <span>Teaching</span>
+          </a>
+        </li>
+        <li>
+          <a class="nav-link" href="mailto:abdullah.altawaitan@ku.edu.kw">
+            <svg class="nav-link__icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <rect x="3" y="5" width="18" height="14" rx="2" />
+              <path d="m3 7 9 6 9-6" />
+            </svg>
+            <span>Email</span>
+          </a>
+        </li>
+        <li>
+          <a class="nav-link" href="https://scholar.google.com/citations?user=aXOeE9gAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">
+            <svg class="nav-link__icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <path d="M22 10 12 4 2 10l10 6 10-6Z" />
+              <path d="M6 12v4c0 1.7 2.7 3 6 3s6-1.3 6-3v-4" />
+            </svg>
+            <span>Scholar</span>
+          </a>
+        </li>
+        <li>
+          <a class="nav-link" href="assets/cv.pdf" target="_blank" rel="noopener noreferrer">
+            <svg class="nav-link__icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8Z" />
+              <path d="M14 3v5h5" />
+              <path d="M9 11h3" />
+              <path d="M9 15h6" />
+              <path d="M9 18h6" />
+            </svg>
+            <span>CV</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div id="top"></div>
+
+    <section id="about" class="hero container" aria-labelledby="hero-name">
+      <div class="hero__aside">
+        <figure class="hero__photo">
+          <img src="assets/profile.png" alt="Abdullah Altawaitan" />
+        </figure>
+
+        <div class="hero__interests">
+          <h2 class="hero__interests-heading">Research Interests</h2>
+          <ul class="hero__interests-list" aria-label="Research interests">
+            <li>Robotics</li>
+            <li>Artificial Intelligence</li>
+            <li>Machine Learning</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="hero__body">
+        <h1 class="hero__name" id="hero-name">Abdullah Altawaitan</h1>
+        <p class="hero__title">Assistant Professor at Kuwait University</p>
+
+        <dl class="hero__meta">
+          <div class="hero__meta-row">
+            <dt>Office</dt>
+            <dd>COEP S02E2236</dd>
+          </div>
+          <div class="hero__meta-row">
+            <dt>Email</dt>
+            <dd><a href="mailto:abdullah.altawaitan@ku.edu.kw">abdullah.altawaitan@ku.edu.kw</a></dd>
+          </div>
+        </dl>
+
+        <p class="hero__about">
+          I am an Assistant Professor in the
+          <a href="https://engineering.ku.edu.kw/ee" target="_blank" rel="noopener noreferrer">Department of Electrical Engineering</a>
+          at <a href="https://www.ku.edu.kw/" target="_blank" rel="noopener noreferrer">Kuwait University</a>. I received my Ph.D. in Electrical Engineering (Intelligent Systems, Robotics, and Control) from the <a href="https://ucsd.edu/" target="_blank" rel="noopener noreferrer">University of California San Diego</a> in 2026, where I worked with <a href="https://natanaso.github.io/" target="_blank" rel="noopener noreferrer">Prof. Nikolay Atanasov</a>. My dissertation focused on <a href="https://www.proquest.com/openview/9dbaf9d702cb1a5d992c17258ebbb5ec/1?pq-origsite=gscholar&cbl=18750&diss=y" rel="noopener noreferrer"><cite>Online Model Learning and Control for Autonomous Robot Navigation</cite></a>. Prior to that, I worked as a Project Engineer at <a href="https://www.honeywell.com/" target="_blank" rel="noopener noreferrer">Honeywell</a>. 
+          I received my B.S. and M.S. degrees in Electrical Engineering from
+          <a href="https://www.asu.edu/" target="_blank" rel="noopener noreferrer">Arizona State University</a>
+          in 2017 and 2019, respectively.
+        </p>
+      </div>
+    </section>
+
+    <section id="updates" class="updates container" aria-labelledby="updates-heading">
+      <h2 class="section-heading" id="updates-heading">Updates</h2>
+
+      <ol class="timeline" id="updatesTimeline">
+        <li class="timeline__item">
+          <span class="timeline__date">Jul&rsquo;26</span>
+          <div class="timeline__marker" aria-hidden="true"><span class="timeline__dot"></span></div>
+          <div class="timeline__body">Our paper, <a href="https://altwaitan.github.io/on_the_fly/" target="_blank" rel="noopener noreferrer"><i>Adapting Neural Robot Dynamics on the Fly for Predictive Control</i></a>, has been accepted to the 65th IEEE Conference on Decision and Control (CDC).</div>
+        </li>
+        <li class="timeline__item">
+          <span class="timeline__date">Oct&rsquo;25</span>
+          <div class="timeline__marker" aria-hidden="true"><span class="timeline__dot timeline__dot"></span></div>
+          <div class="timeline__body">Our paper, <a href="https://thaipduong.github.io/LieGroupHamDL/" target="_blank" rel="noopener noreferrer"><i>Port&#8209;Hamiltonian Neural ODE Networks on Lie Groups for Robot Dynamics Learning and Control</i></a>, has received the 2025 <span class="award-mention award-mention--best"><svg class="award-mention__icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 21h8" /><path d="M12 17v4" /><path d="M7 4h10v5a5 5 0 0 1-10 0Z" /><path d="M17 5h3v2a3 3 0 0 1-3 3" /><path d="M7 5H4v2a3 3 0 0 0 3 3" /></svg>Best Paper Award</span> from the IEEE RAS Technical Committee on Robot Control.</div>
+        </li>
+        <li class="timeline__item">
+          <span class="timeline__date">Sep&rsquo;25</span>
+          <div class="timeline__marker" aria-hidden="true"><span class="timeline__dot"></span></div>
+          <div class="timeline__body">Our paper, <a href="https://arxiv.org/abs/2505.06748" target="_blank" rel="noopener noreferrer"><i>Learned IMU Bias Prediction for Invariant Visual Inertial Odometry</i></a>, has been accepted to IEEE Robotics and Automation Letters (RA&#8209;L).</div>
+        </li>
+        <li class="timeline__item timeline__item--hidden">
+          <span class="timeline__date">May&rsquo;25</span>
+          <div class="timeline__marker" aria-hidden="true"><span class="timeline__dot timeline__dot"></span></div>
+          <div class="timeline__body">Our paper, <a href="https://thaipduong.github.io/LieGroupHamDL/" target="_blank" rel="noopener noreferrer"><i>Port&#8209;Hamiltonian Neural ODE Networks on Lie Groups for Robot Dynamics Learning and Control</i></a>, has received an <span class="award-mention award-mention--honor"><svg class="award-mention__icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 21h8" /><path d="M12 17v4" /><path d="M7 4h10v5a5 5 0 0 1-10 0Z" /><path d="M17 5h3v2a3 3 0 0 1-3 3" /><path d="M7 5H4v2a3 3 0 0 0 3 3" /></svg>Honorable Mention</span> for the 2024 IEEE Transactions on Robotics (T&#8209;RO) King&#8209;Sun Fu Best Paper Award.</div>
+        </li>
+        <li class="timeline__item timeline__item--hidden">
+          <span class="timeline__date">Nov&rsquo;24</span>
+          <div class="timeline__marker" aria-hidden="true"><span class="timeline__dot"></span></div>
+          <div class="timeline__body">Our paper, <a href="https://arxiv.org/abs/2407.14749" target="_blank" rel="noopener noreferrer"><i>Variable&#8209;Frequency Model Learning and Predictive Control for Jumping Maneuvers on Legged Robots</i></a>, has been accepted to IEEE Robotics and Automation Letters (RA&#8209;L).</div>
+        </li>
+        <li class="timeline__item timeline__item--hidden">
+          <span class="timeline__date">Jun&rsquo;24</span>
+          <div class="timeline__marker" aria-hidden="true"><span class="timeline__dot"></span></div>
+          <div class="timeline__body">Our paper, <a href="https://thaipduong.github.io/LieGroupHamDL/" target="_blank" rel="noopener noreferrer"><i>Port&#8209;Hamiltonian Neural ODE Networks on Lie Groups for Robot Dynamics Learning and Control</i></a>, has been accepted to IEEE Transactions on Robotics (T&#8209;RO).</div>
+        </li>
+        <li class="timeline__item timeline__item--hidden">
+          <span class="timeline__date">Jan&rsquo;24</span>
+          <div class="timeline__marker" aria-hidden="true"><span class="timeline__dot"></span></div>
+          <div class="timeline__body">Our paper, <a href="https://altwaitan.github.io/DLFO/" target="_blank" rel="noopener noreferrer"><i>Hamiltonian Dynamics Learning from Point Cloud Observations for Nonholonomic Mobile Robot Control</i></a>, has been accepted to the 2024 IEEE International Conference on Robotics and Automation (ICRA).</div>
+        </li>
+      </ol>
+
+      <div class="updates__toggle-wrap">
+        <button type="button" class="updates__toggle" id="updatesToggle" aria-expanded="false" aria-controls="updatesTimeline">Show more</button>
+      </div>
+    </section>
+
+    <section id="research" class="research container" aria-labelledby="research-heading">
+      <h2 class="section-heading" id="research-heading">Research</h2>
+
+      <ol class="paper-list">
+        <li class="paper">
+          <figure class="paper__media">
+            <img src="assets/research/AdaptLemniscate.gif" alt="Adapting Neural Robot Dynamics on the Fly for Predictive Control — lemniscate trajectory" loading="lazy" />
+            <img src="assets/research/AdaptFlip.gif" alt="Adapting Neural Robot Dynamics on the Fly for Predictive Control — flip maneuver" loading="lazy" />
+          </figure>
+          <div class="paper__body">
+            <h3 class="paper__title">
+              <a href="https://arxiv.org/abs/2604.04039" target="_blank" rel="noopener noreferrer">Adapting Neural Robot Dynamics on the Fly for Predictive Control</a>
+            </h3>
+            <p class="paper__authors"><strong>Abdullah Altawaitan</strong>, Nikolay Atanasov</p>
+            <p class="paper__venue"><cite>IEEE Conference on Decision and Control (CDC)</cite>, 2026.</p>
+            <ul class="paper__links" aria-label="Publication links">
+              <li>
+                <button type="button" class="paper__link paper__cite" aria-haspopup="dialog">
+                  <svg class="paper__link-icon" viewBox="0 0 16 16" width="15" height="15" fill="currentColor" aria-hidden="true" focusable="false">
+                    <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 8.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 8.558V11a1 1 0 0 0 1 1z" />
+                  </svg>
+                  <span>Cite</span>
+                </button>
+                <template class="paper__bibtex">@inproceedings{altawaitan2026adapting,
+  title     = {Adapting Neural Robot Dynamics on the Fly for Predictive Control},
+  author    = {Altawaitan, Abdullah and Atanasov, Nikolay},
+  journal   = {arXiv preprint arXiv:2604.04039},
+  year      = {2026}
+}</template>
+              </li>
+              <li>
+                <a class="paper__link" href="https://arxiv.org/pdf/2604.04039" target="_blank" rel="noopener noreferrer">
+                  <svg class="paper__link-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                    <path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8Z" />
+                    <path d="M14 3v5h5" />
+                    <path d="M9 13h6" />
+                    <path d="M9 17h4" />
+                  </svg>
+                  <span>PDF</span>
+                </a>
+              </li>
+              <li>
+                <a class="paper__link" href="https://altwaitan.github.io/on_the_fly/" target="_blank" rel="noopener noreferrer">
+                  <svg class="paper__link-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M3 12h18" />
+                    <path d="M12 3a13.5 13.5 0 0 1 0 18" />
+                    <path d="M12 3a13.5 13.5 0 0 0 0 18" />
+                  </svg>
+                  <span>Website</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="paper">
+          <figure class="paper__media">
+            <img src="assets/research/LearnedBiasCam.gif" alt="Learned IMU Bias Prediction for Invariant Visual Inertial Odometry — CAM" loading="lazy" />
+            <img src="assets/research/LearnedBiasRviz.gif" alt="Learned IMU Bias Prediction for Invariant Visual Inertial Odometry — Rviz" loading="lazy" />
+          </figure>
+          <div class="paper__body">
+            <h3 class="paper__title">
+              <a href="https://arxiv.org/abs/2505.06748" target="_blank" rel="noopener noreferrer">Learned IMU Bias Prediction for Invariant Visual Inertial Odometry</a>
+            </h3>
+            <p class="paper__authors"><strong>Abdullah Altawaitan</strong>, Jason Stanley, Sambaran Ghosal, Thai Duong, Nikolay Atanasov</p>
+            <p class="paper__venue"><cite>IEEE Robotics and Automation Letters (RA&#8209;L)</cite>, 2025.</p>
+            <ul class="paper__links" aria-label="Publication links">
+              <li>
+                <button type="button" class="paper__link paper__cite" aria-haspopup="dialog">
+                  <svg class="paper__link-icon" viewBox="0 0 16 16" width="15" height="15" fill="currentColor" aria-hidden="true" focusable="false">
+                    <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 8.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 8.558V11a1 1 0 0 0 1 1z" />
+                  </svg>
+                  <span>Cite</span>
+                </button>
+                <template class="paper__bibtex">@article{altawaitan2025learned,
+  title   = {Learned IMU Bias Prediction for Invariant Visual Inertial Odometry},
+  author  = {Altawaitan, Abdullah and Stanley, Jason and Ghosal, Sambaran and Duong, Thai and Atanasov, Nikolay},
+  journal = {IEEE Robotics and Automation Letters (RA-L)},
+  year    = {2025},
+  volume  = {10},
+  number  = {11},
+  pages   = {11872-11879},
+  doi     = {https://doi.org/10.1109/LRA.2025.3617733}
+}</template>
+              </li>
+              <li>
+                <a class="paper__link" href="https://arxiv.org/pdf/2505.06748" target="_blank" rel="noopener noreferrer">
+                  <svg class="paper__link-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                    <path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8Z" />
+                    <path d="M14 3v5h5" />
+                    <path d="M9 13h6" />
+                    <path d="M9 17h4" />
+                  </svg>
+                  <span>PDF</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="paper">
+          <figure class="paper__media">
+            <img src="assets/research/MPC4Legged_1.gif" alt="Variable-Frequency Model Learning and Predictive Control for Jumping Maneuvers on Legged Robots — Box" loading="lazy" />
+            <img src="assets/research/MPC4Legged_2.gif" alt="Variable-Frequency Model Learning and Predictive Control for Jumping Maneuvers on Legged Robots — Consecutive" loading="lazy" />
+          </figure>
+          <div class="paper__body">
+            <h3 class="paper__title">
+              <a href="https://arxiv.org/abs/2407.14749" target="_blank" rel="noopener noreferrer">Variable&#8209;Frequency Model Learning and Predictive Control for Jumping Maneuvers on Legged Robots</a>
+            </h3>
+            <p class="paper__authors">Chuong Nguyen, <strong>Abdullah Altawaitan</strong>, Thai Duong, Nikolay Atanasov, Quan Nguyen</p>
+            <p class="paper__venue"><cite>IEEE Robotics and Automation Letters (RA&#8209;L)</cite>, 2025.</p>
+            <ul class="paper__links" aria-label="Publication links">
+              <li>
+                <button type="button" class="paper__link paper__cite" aria-haspopup="dialog">
+                  <svg class="paper__link-icon" viewBox="0 0 16 16" width="15" height="15" fill="currentColor" aria-hidden="true" focusable="false">
+                    <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 8.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 8.558V11a1 1 0 0 0 1 1z" />
+                  </svg>
+                  <span>Cite</span>
+                </button>
+                <template class="paper__bibtex">@article{nguyen2025variable,
+  title   = {Variable-Frequency Model Learning and Predictive Control for Jumping Maneuvers on Legged Robots},
+  author  = {Nguyen, Chuong and Altawaitan, Abdullah and Duong, Thai and Atanasov, Nikolay and Nguyen, Quan},
+  journal = {IEEE Robotics and Automation Letters (RA-L)},
+  year    = {2025},
+  volume  = {10},
+  number  = {2},
+  pages   = {1321-1328},
+  doi     = {https://doi.org/10.1109/LRA.2024.3519864}
+}</template>
+              </li>
+              <li>
+                <a class="paper__link" href="https://arxiv.org/pdf/2407.14749" target="_blank" rel="noopener noreferrer">
+                  <svg class="paper__link-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                    <path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8Z" />
+                    <path d="M14 3v5h5" />
+                    <path d="M9 13h6" />
+                    <path d="M9 17h4" />
+                  </svg>
+                  <span>PDF</span>
+                </a>
+              </li>
+              <li>
+                <a class="paper__link" href="https://youtu.be/qaXPPGrvVr4" target="_blank" rel="noopener noreferrer">
+                  <svg class="paper__link-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                    <rect x="3" y="5" width="18" height="14" rx="2" />
+                    <path d="m10 9 5 3-5 3Z" />
+                  </svg>
+                  <span>Video</span>
+                </a>
+              </li>
+              <li>
+                <a class="paper__link" href="https://github.com/DRCL-USC/Learning_MPC_Jumping" target="_blank" rel="noopener noreferrer">
+                  <svg class="paper__link-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                    <path d="m8 8-5 4 5 4" />
+                    <path d="m16 8 5 4-5 4" />
+                    <path d="m14 4-4 16" />
+                  </svg>
+                  <span>Code</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="paper">
+          <figure class="paper__media">
+            <img src="assets/research/LieGroup_1.gif" alt="Port-Hamiltonian Neural ODE Networks on Lie Groups for Robot Dynamics Learning and Control — Data" loading="lazy" />
+            <img src="assets/research/LieGroup_2.gif" alt="Port-Hamiltonian Neural ODE Networks on Lie Groups for Robot Dynamics Learning and Control — Tracking" loading="lazy" />
+          </figure>
+          <div class="paper__body">
+            <h3 class="paper__title">
+              <a href="https://arxiv.org/abs/2401.09520" target="_blank" rel="noopener noreferrer">Port&#8209;Hamiltonian Neural ODE Networks on Lie Groups for Robot Dynamics Learning and Control</a>
+            </h3>
+            <p class="paper__authors">Thai Duong, <strong>Abdullah Altawaitan</strong>, Jason Stanley, Nikolay Atanasov</p>
+            <p class="paper__venue"><cite>IEEE Transactions on Robotics (T&#8209;RO)</cite>, 2024.</p>
+            <ul class="paper__awards" aria-label="Awards">
+              <li class="award award--best">
+                <svg class="award__icon" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                  <path d="M8 21h8" />
+                  <path d="M12 17v4" />
+                  <path d="M7 4h10v5a5 5 0 0 1-10 0Z" />
+                  <path d="M17 5h3v2a3 3 0 0 1-3 3" />
+                  <path d="M7 5H4v2a3 3 0 0 0 3 3" />
+                </svg>
+                <span>Best Paper Award &mdash; 2025 IEEE RAS TC on Robot Control</span>
+              </li>
+              <li class="award award--honor">
+                <svg class="award__icon" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                  <path d="M8 21h8" />
+                  <path d="M12 17v4" />
+                  <path d="M7 4h10v5a5 5 0 0 1-10 0Z" />
+                  <path d="M17 5h3v2a3 3 0 0 1-3 3" />
+                  <path d="M7 5H4v2a3 3 0 0 0 3 3" />
+                </svg>
+                <span>Honorable Mention &mdash; 2024 IEEE T&#8209;RO King&#8209;Sun Fu Best Paper Award</span>
+              </li>
+            </ul>
+            <ul class="paper__links" aria-label="Publication links">
+              <li>
+                <button type="button" class="paper__link paper__cite" aria-haspopup="dialog">
+                  <svg class="paper__link-icon" viewBox="0 0 16 16" width="15" height="15" fill="currentColor" aria-hidden="true" focusable="false">
+                    <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 8.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 8.558V11a1 1 0 0 0 1 1z" />
+                  </svg>
+                  <span>Cite</span>
+                </button>
+                <template class="paper__bibtex">@article{duong2024port,
+  title   = {Port-Hamiltonian Neural ODE Networks on Lie Groups for Robot Dynamics Learning and Control},
+  author  = {Duong, Thai and Altawaitan, Abdullah and Stanley, Jason and Atanasov, Nikolay},
+  journal = {IEEE Transactions on Robotics (T-RO)},
+  year    = {2024},
+  volume  = {40},
+  pages   = {3695-3715},
+  doi     = {https://doi.org/10.1109/TRO.2024.3428433}
+}</template>
+              </li>
+              <li>
+                <a class="paper__link" href="https://arxiv.org/pdf/2401.09520.pdf" target="_blank" rel="noopener noreferrer">
+                  <svg class="paper__link-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                    <path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8Z" />
+                    <path d="M14 3v5h5" />
+                    <path d="M9 13h6" />
+                    <path d="M9 17h4" />
+                  </svg>
+                  <span>PDF</span>
+                </a>
+              </li>
+              <li>
+                <a class="paper__link" href="https://youtu.be/p_5nGipiVlw" target="_blank" rel="noopener noreferrer">
+                  <svg class="paper__link-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                    <rect x="3" y="5" width="18" height="14" rx="2" />
+                    <path d="m10 9 5 3-5 3Z" />
+                  </svg>
+                  <span>Video</span>
+                </a>
+              </li>
+              <li>
+                <a class="paper__link" href="https://thaipduong.github.io/LieGroupHamDL/" target="_blank" rel="noopener noreferrer">
+                  <svg class="paper__link-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M3 12h18" />
+                    <path d="M12 3a13.5 13.5 0 0 1 0 18" />
+                    <path d="M12 3a13.5 13.5 0 0 0 0 18" />
+                  </svg>
+                  <span>Website</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="paper">
+          <figure class="paper__media">
+            <img src="assets/research/DLFO_1.gif" alt="Hamiltonian Dynamics Learning from Point Cloud Observations for Nonholonomic Mobile Robot Control — LiDAR" loading="lazy" />
+            <img src="assets/research/DLFO_2.gif" alt="Hamiltonian Dynamics Learning from Point Cloud Observations for Nonholonomic Mobile Robot Control — Jackal" loading="lazy" />
+          </figure>
+          <div class="paper__body">
+            <h3 class="paper__title">
+              <a href="https://arxiv.org/abs/2309.09163" target="_blank" rel="noopener noreferrer">Hamiltonian Dynamics Learning from Point Cloud Observations for Nonholonomic Mobile Robot Control</a>
+            </h3>
+            <p class="paper__authors"><strong>Abdullah Altawaitan</strong>, Jason Stanley, Sambaran Ghosal, Thai Duong, Nikolay Atanasov</p>
+            <p class="paper__venue"><cite>IEEE International Conference on Robotics and Automation (ICRA)</cite>, 2024.</p>
+            <ul class="paper__links" aria-label="Publication links">
+              <li>
+                <button type="button" class="paper__link paper__cite" aria-haspopup="dialog">
+                  <svg class="paper__link-icon" viewBox="0 0 16 16" width="15" height="15" fill="currentColor" aria-hidden="true" focusable="false">
+                    <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 8.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 8.558V11a1 1 0 0 0 1 1z" />
+                  </svg>
+                  <span>Cite</span>
+                </button>
+                <template class="paper__bibtex">@inproceedings{altawaitan2024hamiltonian,
+  title     = {Hamiltonian Dynamics Learning from Point Cloud Observations for Nonholonomic Mobile Robot Control},
+  author    = {Altawaitan, Abdullah and Stanley, Jason and Ghosal, Sambaran and Duong, Thai and Atanasov, Nikolay},
+  booktitle = {IEEE International Conference on Robotics and Automation (ICRA)},
+  year      = {2024},
+  pages     = {16937-16944},
+  doi       = {https://doi.org/10.1109/ICRA57147.2024.10610395}
+}</template>
+              </li>
+              <li>
+                <a class="paper__link" href="https://arxiv.org/pdf/2309.09163.pdf" target="_blank" rel="noopener noreferrer">
+                  <svg class="paper__link-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                    <path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8Z" />
+                    <path d="M14 3v5h5" />
+                    <path d="M9 13h6" />
+                    <path d="M9 17h4" />
+                  </svg>
+                  <span>PDF</span>
+                </a>
+              </li>
+              <li>
+                <a class="paper__link" href="https://youtu.be/CWv_3Zam64o" target="_blank" rel="noopener noreferrer">
+                  <svg class="paper__link-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                    <rect x="3" y="5" width="18" height="14" rx="2" />
+                    <path d="m10 9 5 3-5 3Z" />
+                  </svg>
+                  <span>Video</span>
+                </a>
+              </li>
+              <li>
+                <a class="paper__link" href="https://altwaitan.github.io/DLFO/" target="_blank" rel="noopener noreferrer">
+                  <svg class="paper__link-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M3 12h18" />
+                    <path d="M12 3a13.5 13.5 0 0 1 0 18" />
+                    <path d="M12 3a13.5 13.5 0 0 0 0 18" />
+                  </svg>
+                  <span>Website</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section id="teaching" class="teaching container" aria-labelledby="teaching-heading">
+      <h2 class="section-heading" id="teaching-heading">Teaching</h2>
+
+      <ul class="course-list">
+        <li class="course">
+          <div class="course__meta">
+            <span class="course__code">EE 213</span>
+            <span class="course__level">Undergraduate</span>
+          </div>
+          <div class="course__body">
+            <p class="course__name">Linear Circuit Analysis</p>
+            <ul class="course__terms" aria-label="Terms taught">
+              <li class="course__term">FA&#8217;26</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="course">
+          <div class="course__meta">
+            <span class="course__code">EE 385</span>
+            <span class="course__level">Undergraduate</span>
+          </div>
+          <div class="course__body">
+            <p class="course__name">Introduction to Digital Signal Processing</p>
+            <ul class="course__terms" aria-label="Terms taught">
+              <li class="course__term">FA&#8217;26</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="site-footer__copy">&copy; 2026 Abdullah Altawaitan</p>
+    </div>
+  </footer>
+
+  <div class="cite-modal" id="citeModal" hidden>
+    <div class="cite-modal__overlay" data-cite-close></div>
+    <div class="cite-modal__card" role="dialog" aria-modal="true" aria-labelledby="citeModalTitle">
+      <div class="cite-modal__head">
+        <h2 class="cite-modal__title" id="citeModalTitle">BibTeX Citation</h2>
+        <button type="button" class="cite-modal__close" data-cite-close aria-label="Close citation dialog">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <path d="M18 6 6 18" />
+            <path d="m6 6 12 12" />
+          </svg>
+        </button>
+      </div>
+      <pre class="cite-modal__code" id="citeModalCode" tabindex="0"></pre>
+      <div class="cite-modal__actions">
+        <button type="button" class="paper__link cite-modal__copy" id="citeModalCopy">
+          <svg class="paper__link-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <rect x="9" y="9" width="11" height="11" rx="2" />
+            <path d="M5 15V5a2 2 0 0 1 2-2h8" />
+          </svg>
+          <span>Copy</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
